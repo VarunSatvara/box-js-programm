@@ -48,8 +48,10 @@
             var z = document.getElementById("demo2");
             if (x.innerHTML == "A") {
                 x.innerHTML = "B";
-            } else {
+            } else if (x.innerHTML == "B") {
                 x.innerHTML = "C";
+            } else {
+                x.innerHTML = "A"
             }
         }
 
@@ -58,8 +60,10 @@
 
             if (y.innerHTML == "B") {
                 y.innerHTML = "C";
-            } else {
+            } else if (y.innerHTML == "C") {
                 y.innerHTML = "A";
+            } else {
+                y.innerHTML = "B";
             }
         }
 
@@ -68,8 +72,10 @@
 
             if (z.innerHTML == "C") {
                 z.innerHTML = "B";
-            } else {
+            } else if (z.innerHTML == "B") {
                 z.innerHTML = "A";
+            } else {
+                z.innerHTML = "C";
             }
         }
     </script>
