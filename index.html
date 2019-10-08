@@ -44,8 +44,6 @@
     <script>
         function test() {
             var x = document.getElementById("demo");
-
-            var z = document.getElementById("demo2");
             if (x.innerHTML == "A") {
                 x.innerHTML = "B";
             } else if (x.innerHTML == "B") {
@@ -57,19 +55,17 @@
 
         function test1() {
             var y = document.getElementById("demo1");
-
             if (y.innerHTML == "B") {
                 y.innerHTML = "C";
             } else if (y.innerHTML == "C") {
                 y.innerHTML = "A";
             } else {
-                y.innerHTML = "B";
+                y.innerHTML = "B"
             }
         }
 
         function test2() {
             var z = document.getElementById("demo2");
-
             if (z.innerHTML == "C") {
                 z.innerHTML = "B";
             } else if (z.innerHTML == "B") {
